@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@font-face {
+    font-family: lato;
+    src: url(./style/fonts/lato/Lato-Regular.ttf);
+}
+
+// declare a class which applies it
+body {
+    font-family: "Poppins" !important;
+}
+
+$primary: #1976d2;
+$secondary: #26a69a;
+$accent: #9c27b0;
+
+$dark: #1d1d1d;
+$light: #ffffff;
+$paper: #f4f4f4;
+$positive: #21ba45;
+$negative: #c10015;
+$info: #31ccec;
+$warning: #f2c037;
+
+.text-light {
+    color: $light;
+}
+.bg-light {
+    background-color: $light;
+}
+.text-paper {
+    color: $paper;
+}
+.bg-paper {
+    background-color: $paper;
+}
+.d-block {
+    display: block;
+}
+.flat-button {
+    :deep(.q-focus-helper),:deep(.q-hover-helper) {
+        display: none !important;
+    }
+}
+.min-h-100 {
+    min-height: 100vh;
+}
+
+.scrollable{
+    max-width: 100vh;
+    overflow: auto;
+}
+@for $spacing from 0 through 96 {
+    .pa-#{$spacing} {
+        padding: #{$spacing}px;
+    }
+    .px-#{$spacing} {
+        padding-left: #{$spacing}px;
+        padding-right: #{$spacing}px;
+    }
+
+    .py-#{$spacing} {
+        padding-top: #{$spacing}px;
+        padding-bottom: #{$spacing}px;
+    }
+
+    .pt-#{$spacing} {
+        padding-top: #{$spacing}px;
+    }
+
+    .pb-#{$spacing} {
+        padding-bottom: #{$spacing}px;
+    }
+
+    .pl-#{$spacing} {
+        padding-left: #{$spacing}px;
+    }
+
+    .pr-#{$spacing} {
+        padding-right: #{$spacing}px;
+    }
+
+    .ma-#{$spacing} {
+        margin: #{$spacing}px;
+    }
+
+    .mx-#{$spacing} {
+        margin-left: #{$spacing}px;
+        margin-right: #{$spacing}px;
+    }
+
+    .my-#{$spacing} {
+        margin-top: #{$spacing}px;
+        margin-bottom: #{$spacing}px;
+    }
+
+    .mt-#{$spacing} {
+        margin-top: #{$spacing}px;
+    }
+
+    .mb-#{$spacing} {
+        margin-bottom: #{$spacing}px;
+    }
+
+    .ml-#{$spacing} {
+        margin-left: #{$spacing}px;
+    }
+
+    .mr-#{$spacing} {
+        margin-right: #{$spacing}px;
+    }
+}
